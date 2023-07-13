@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    padding: 30px 20px 0px;
+}
+/*Header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18%;
+    border-radius:1px solid rgba(219,219,219,1);
+    background-color: white;
+    
+  
+}
+header.logo{
+    height: 29px;
+}
+header .logo img{
+    height: 100%;
+    object-fit: contain;
+}
+header .search{
+    width: 250px;
+    background-color:rgba(219,219,219,1);
+    padding: 3px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+header .search input{
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color:rgba(219,219,219,1);
+    padding-left: 10px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+header nav ul{
+    list-style: none;
+    display:flex;
+}
+header nav ul li{
+    margin-right: 20px;
+    margin-left:0PX;
+}
+header nav ul li :last-child{
+    margin-right: 0;
+}
+header nav ul li a i{
+    font-size: 22px;
+    color:rgba(38,38,38,1);
+}
+header nav ul li a img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*Section*/
+
+section{
+    padding: 30px 18%;
+    display:flex;    
+ 
+}
+
+.bio{
+    height: 50%;
+    margin-left:8%;
+    margin-right:17%;
+    display: flex;
+}
+.bio .pro img{
+    width:100px;
+    height:100px    ;
+   
+}
+.pro img{
+    border-radius: 50%;    
+    object-fit: contain;
+
+}
+.followbox nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 60px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+button{
+    vertical-align: middle;
+    padding:7px 16px;
+    margin-top: -8px;
+    border-radius:8px;
+    font-weight: 550;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color:#0095f6;
+}
+nav ul li{
+    margin-right: 30px;
+}
+ul button{
+    margin-right: 30px;
+}
+nav ol{
+    list-style-type: none;
+    display: flex;
+    margin-top: 30px;
+    margin-left:60px;
+    margin-bottom: 25px;
+
+}
+nav ol li{
+    margin-right:25px;
+}
+nav ol li p{
+    font-weight:500;
+    font-size:17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*bio data*/
+
+.biodata ul{
+    list-style-type:none;
+    margin-top:20px;
+    margin-left: 60px;
+}
+.highlight{
+    display: flex;
+    padding: 16px;
+    margin-top:25px;
+    margin-left: -100px;
+   
+
+}
+.highlight .story{
+    width: 17%;
+    margin-right:25px;
+}
+.highlight .story a img{
+    border-radius: 50%;
+    border: 2px solid #c62d8f;
+    padding: 1px;
+    object-fit: cover;
+}
+.highlight .story p{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #262626;
+}
+
+hr{
+    margin: 0px 100px 6px 100px;
+}
+.post table{
+       margin:auto;
+       align-items: center;
+       padding: 20px;
+}
+
+
+@media (max-width:992px){
+    header{
+        padding: 10px 20px;        
+    }
+    body
+    {
+        padding: 10px 20px;  
+        margin-left: 0%;
+        padding-left:0%;
+    }
+    .post table {
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    header .search{
+        visibility: hidden;
+    }
+    header .search i{
+        visibility: visible;
+        margin-left: 20px;
+    }
+    header nav ul{
+        margin-left: -172px;
+        font-size: 18px;
+    }
+    section{
+        padding-left: 20px;
+    }
+}
+@media (max-width:420px){
+    header{
+        padding: 10px 20px;        
+    }
+    header .logo img{
+        height: 20px;
+
+    }
+    header .search{
+        visibility: hidden;
+    }
+    header .search i{
+        visibility: visible;
+        margin-left: 20px;
+    }
+    header nav ul{
+        margin-left: -172px;
+        font-size: 18px;
+    }
+    section{
+        padding-left:20px;
+        width: 22%;
+    }
+    .highlight .story{
+        width:10%;
+
+    }
+
+    body
+    {
+        padding: 10px 20px;  
+        margin-left: 0%;
+        padding-left: 0%;
+        width: 25%;
+    }
+    .post table {
+        padding-left:10px;
+        padding-right: 10px;
+        width:25%;
+    }
+    .post table tr td img{
+        height: 209;
+    }
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+}
+section{
+    padding: 100px 0px 515px 0px;
+    width: 750px;
+    margin:auto;
+    display:flex;   
+    background-color:gainsboro;
+}
+
+.left{
+    display:flex;
+    margin-left:15px;
+}
+.left .image,img{
+    border-radius: 50%;
+    
+}
+.left .name{
+    margin-top:8px;
+    margin-left: 5px;
+}
+.stauts video{
+    margin-top:0px;    
+}
